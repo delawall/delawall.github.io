@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -22,6 +22,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='js/knockout/knockout.js'></script>
+    <script src="js/moment.js"></script>
     <script src="js/main.js"></script>
 
   </head>
@@ -30,10 +32,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-12 title">
-                    Jackpot denna vecka p� stryktipset
+                    <span class="col-md-2"></span>
+                    <span class="col-md-8">Jackpot denna vecka på europatipset</span>
+                    <span class="col-md-2"></span>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 weekly-user">
+                    <p>Veckans tipsare:<span data-bind="text:currentBetter"></span></p>
                     <h1>Stryktipset</h1>
+                    <p class="date-info" data-bind="text:currentDate"></p>
+                    <p class="date-info" data-bind="text: currentTime"></p>
                 </div>
                 <div class="col-md-12">
                     <ul>
