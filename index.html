@@ -37,19 +37,51 @@
                     <span class="col-md-2"></span>
                 </div>
                 <div class="col-md-12 weekly-user">
-                    <p>Veckans tipsare:<span data-bind="text:currentBetter"></span></p>
-                    <h1>Stryktipset</h1>
-                    <p class="date-info" data-bind="text:currentDate"></p>
-                    <p class="date-info" data-bind="text: currentTime"></p>
+                    <div class="col-md-12">
+                        <p class="middle">Veckans tipsare:<span data-bind="text: currentBetter"></span></p>
+                        <h1>Stryktipset</h1>
+                    </div>
+                    <div class="row">
+                        <p class=" col-md-4 "></p>
+                        <p class="middle col-md-4" data-bind="text:currentDate"></p>
+                        <p class="right col-md-4" data-bind="text: currentTime"></p>
+                    </div>
                 </div>
                 <div class="col-md-12">
-                    <ul>
-                        <li>1</li>
-                    </ul>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Namn</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>SEK</th>
+                            </tr>
+                        </thead>
+                        <tbody data-bind="foreach:result">
+                            <tr>
+                                <td data-Bind="text:Name"></td>
+                                <td data-bind="text:Tior"></td>
+                                <td data-bind="text: Elvor"></td>
+                                <td data-bind="text: Tolvor"></td>
+                                <td data-bind="text: Tretton"></td>
+                                <td data-bind="text: ko.computed(function () { return Cash + ':-'; })"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="right-stripe">
-                hej
+                <span class="right-stripe-text">
+                    <span>www.delawall.github.io</span>
+                    <span>André Mayr</span>
+                    <span>Bill Gabrielsson</span>
+                    <span>Peter Mayr</span>
+                    <span>Patrik Wall</span>
+                    
+                </span>
             </div>
         </div>
     </div>
