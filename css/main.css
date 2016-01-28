@@ -50,6 +50,25 @@ body {
 
     
 }
+.joker {
+    
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    text-align: center;
+    font-size: 1.4vw;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: "Courier New";
+}
+.joker span {
+    display: block;
+    font-weight: normal;
+}
+.info-text {
+    text-align: center;
+    padding: 80px;
+    font-size: 1.2vw;
+}
 
 .right-stripe-text {
     transform: rotate(90deg);
