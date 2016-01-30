@@ -1,6 +1,6 @@
 body {
     background-color: #222222;
-    font-size: 16px;
+    
 }
 .container {
     margin-top: 10px;
@@ -48,14 +48,14 @@ body {
     right: 5px;
     width: 2vw;
     color: #fff;
-
+    font-size: 8px;
     
 }
 .joker {
     border-top: solid 2px black;
     border-bottom: solid 2px black;
     text-align: center;
-    font-size: 2vw;
+    font-size: 21px;
     font-weight: bolder;
     text-transform: uppercase;
     font-family: "Courier New";
@@ -66,15 +66,15 @@ body {
 }
 .info-text {
     text-align: center;
-    padding: 80px;
-    font-size: 1.2vw;
+    
+    font-size: 11px;
 }
 
 .right-stripe-text {
     transform: rotate(90deg);
 	transform-origin: left  top 0;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 11px;
     margin-top: 30px;
     width: 1000px;
     position: absolute;

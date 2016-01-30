@@ -48,7 +48,7 @@
                 <div class="col-md-12">
                     <table class="table currentBet" data-bind="foreach:tippingrows">
                         <tr>
-                            <td data-bind="text:$index() + 1 "></td>
+                            <td data-bind="text:$index() + 1 + '.' "></td>
                             <td data-bind="text:Match"></td>
                             <td data-bind="text:ko.computed(function(){ return One ? '1' : ''})"></td>
                             <td data-bind="text:ko.computed(function(){ return X ? 'X' : ''})"></td>
