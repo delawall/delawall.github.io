@@ -32,9 +32,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-12 title">
-                    <span class="col-md-2"></span>
-                    <span class="col-md-8">Jackpot denna vecka på europatipset</span>
-                    <span class="col-md-2"></span>
+                    <span>Jackpot denna vecka på europatipset</span>
                 </div>
                 <div class="col-md-12 weekly-user">
                     <div class="col-md-12">
@@ -42,10 +40,22 @@
                         <h1>Stryktipset</h1>
                     </div>
                     <div class="row">
-                        <p class=" col-md-4 "></p>
-                        <p class="middle col-md-4" data-bind="text:currentDate"></p>
-                        <p class="right col-md-4" data-bind="text: currentTime"></p>
+                        <span class=" col-md-4 "></span>
+                        <span class="middle col-md-4" data-bind="text:currentDate"></span>
+                        <span class="right col-md-4" data-bind="text: currentTime"></span>
                     </div>
+                </div>
+                <div class="col-md-12">
+                    <table class="table currentBet" data-bind="foreach:tippingrows">
+                        <tr>
+                            <td data-bind="text:$index() + 1 "></td>
+                            <td data-bind="text:Match"></td>
+                            <td data-bind="text:ko.computed(function(){ return One ? '1' : ''})"></td>
+                            <td data-bind="text:ko.computed(function(){ return X ? 'X' : ''})"></td>
+                            <td data-bind="text:ko.computed(function(){ return Two ? '2' : ''})"></td>
+                            
+                        </tr>
+                    </table>
                 </div>
                 <div class="col-md-12">
 
