@@ -5,7 +5,7 @@
     var dummyViewModel = function() {
         var self = this;
 
-        self.currentBetter = ko.observable("Patrik Wall");
+        self.currentBetter = ko.observable("Peter Mayr");
         self.currentDate = ko.observable(moment(new Date()).format('ll'));
         self.currentTime = ko.observable(moment(new Date()).format('HH:mm:ss'));
 
@@ -84,11 +84,11 @@
         //Patrik
         self.Patrik = {
             "Name": "Patrik Wall",
-            "Tior": 0,
+            "Tior": 4,
             "Elvor": 0,
             "Tolvor": 0,
             "Tretton": 0,
-            "Cash": 0
+            "Cash": 72
         };
 
         self.init = function () {

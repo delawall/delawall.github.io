@@ -29,70 +29,64 @@
   </head>
   <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-12 title">
-                    <span>Jackpot denna vecka på europatipset</span>
-                </div>
-                <div class="col-md-12 weekly-user">
-                    <div class="col-md-12">
-                        <p class="middle">Veckans tipsare:<span data-bind="text: currentBetter"></span></p>
-                        <h1>Stryktipset</h1>
-                    </div>
-                    <div class="row">
-                        <span class=" col-md-4 "></span>
-                        <span class="middle col-md-4" data-bind="text:currentDate"></span>
-                        <span class="right col-md-4" data-bind="text: currentTime"></span>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <table class="table currentBet" data-bind="foreach:tippingrows">
-                        <tr>
-                            <td data-bind="text:$index() + 1 + '.' "></td>
-                            <td data-bind="text:Match"></td>
-                            <td data-bind="text:ko.computed(function(){ return One ? '1' : ''})"></td>
-                            <td data-bind="text:ko.computed(function(){ return X ? 'X' : ''})"></td>
-                            <td data-bind="text:ko.computed(function(){ return Two ? '2' : ''})"></td>
+        <div class="col-md-12 col-lg-8 col-lg-offset-2">
+            <span>Jackpot denna vecka på europatipset</span>
+        </div>
+        <div class="col-md-12 col-lg-8 col-lg-offset-2">
+            <p>Veckans tipsare:<span data-bind="text: currentBetter"></span></p>
+            <h1>Stryktipset</h1>
+        </div>
+        <div class="col-md-12 col-lg-8 col-lg-offset-2">
+            <span data-bind="text: currentDate"></span>
+            <span data-bind="text: currentTime"></span>
+        </div>
+        <div class="col-md-12 col-lg-8 col-lg-offset-2">
+            <table class="table table-condensed" >
+                <tbody data-bind="foreach: tippingrows">
+                    <tr>
+                        <td data-bind="text:$index() + 1 + '.' "></td>
+                        <td data-bind="text:Match"></td>
+                        <td data-bind="text:ko.computed(function(){ return One ? '1' : ''})"></td>
+                        <td data-bind="text:ko.computed(function(){ return X ? 'X' : ''})"></td>
+                        <td data-bind="text:ko.computed(function(){ return Two ? '2' : ''})"></td>
                             
-                        </tr>
-                    </table>
-                </div>
-                <div class="col-md-12">
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-12 col-lg-8 col-lg-offset-2">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Namn</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>12</th>
+                        <th>13</th>
+                        <th>SEK</th>
+                    </tr>
+                </thead>
+                <tbody data-bind="foreach:result">
+                    <tr>
+                        <td data-Bind="text:Name"></td>
+                        <td data-bind="text:Tior"></td>
+                        <td data-bind="text: Elvor"></td>
+                        <td data-bind="text: Tolvor"></td>
+                        <td data-bind="text: Tretton"></td>
+                        <td data-bind="text: ko.computed(function () { return Cash + ':-'; })"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Namn</th>
-                                <th>10</th>
-                                <th>11</th>
-                                <th>12</th>
-                                <th>13</th>
-                                <th>SEK</th>
-                            </tr>
-                        </thead>
-                        <tbody data-bind="foreach:result">
-                            <tr>
-                                <td data-Bind="text:Name"></td>
-                                <td data-bind="text:Tior"></td>
-                                <td data-bind="text: Elvor"></td>
-                                <td data-bind="text: Tolvor"></td>
-                                <td data-bind="text: Tretton"></td>
-                                <td data-bind="text: ko.computed(function () { return Cash + ':-'; })"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="col-md-12">
+            <!--<div class="col-md-12">
                 <p class="joker">Joker lördag 6666666 <span>INSATS 10kr</span></p>
                 <p class="info-text">
                     Spelkvittot är personligt och får bara visas snabbt mellan deltagarna. Vinst inlöses senast 3 månader efter fastställt resultat och måste delas med deltagarna.
                 </p>
+            </div>-->
 
-            </div>
-
-            <div class="right-stripe">
+<!--            <div class="right-stripe">
                 <span class="right-stripe-text">
                     <span>www.delawall.github.io</span>
                     <span>André Mayr</span>
@@ -102,8 +96,8 @@
                     <span>www.delawall.github.io</span>
                     <span>André Mayr</span>
                 </span>
-            </div>
-        </div>
+            </div>-->
+        
     </div>
   
 
